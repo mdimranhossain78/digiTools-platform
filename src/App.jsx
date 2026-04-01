@@ -19,6 +19,7 @@ const [count, setCount]=useState(0)
       <Hero></Hero>
       <Analysis></Analysis>
       <MainSection dataPromise = {dataPromise} setCount={setCount}></MainSection>
+      
 
     </>
   )

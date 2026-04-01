@@ -1,22 +1,27 @@
 import React, { use, useEffect, useState } from 'react';
 import Product from '../product/Product';
 import Cart from '../cart-section/Cart';
+import Stapes from '../Steps-section/Stapes';
+import PricingCard from '../pricing-section/PricingCard';
 
 const MainSection = ({dataPromise, setCount}) => {
 
    const allData =use(dataPromise)
     const [tab, setTab]= useState('product')
     const [addCart, setAddCart] =useState([])
+    const [price, setPrice] = useState(0)
     
     useEffect(()=>{
           setCount(addCart.length)
+
+         
     })
   
 
     // console.log(allData)
     return (
 
-        <div className='w-300 mx-auto my-30'>
+        <div className='max-w-300 mx-auto my-30'>
 
             <div className='text-center mb-6'>
                 <h1 className='font-extrabold text-[48px]'>Premium Digital Tools</h1>
@@ -31,10 +36,13 @@ const MainSection = ({dataPromise, setCount}) => {
   
 </div>
             
-           {tab === "product"? <Product allData={allData} addCart = {addCart} setAddCart={setAddCart}></Product> 
+           {tab === "product"? <Product allData={allData} addCart = {addCart} setAddCart={setAddCart} price ={price} setPrice={setPrice}></Product> 
+           
            :
-            <Cart addCart={addCart}></Cart>} 
-
+            <Cart addCart={addCart} setAddCart={setAddCart}  price ={price} setPrice={setPrice} ></Cart>} 
+ 
+         {tab === "product"&&<Stapes></Stapes>}
+        {tab === "product"&&<PricingCard></PricingCard>}
          
 
         </div>

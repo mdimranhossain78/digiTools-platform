@@ -1,10 +1,48 @@
 import React from 'react';
 
-const AvailableCart = () => {
+const AvailableCart = ({addCart, setAddCart, price, setPrice}) => {
+    // console.log(addCart)
+   
+    const handelCartRemove =(carts)=>{
+        console.log(carts)
+       const total = price - carts.price
+      
+        
+         setPrice(Number(total.toFixed(2)) )
+
+          console.log(price)
+
+        const fileteredCarts = addCart.filter((filterCart)=> filterCart.name  != carts.name)
+        setAddCart(fileteredCarts)
+
+       
+    }
+    
     return (
+
         <div>
-            
+            {
+        addCart.map((carts) =>{
+            return <div key={carts.id} className='bg-gray-300 p-4 mb-4'>
+            <div className='flex justify-between items-center'>
+               <div className='flex gap-4 items-center'>
+                 <img className='h-7.5 w-7.5' src="/public/image/design-tool.png" alt="" />
+                <div>
+                    <h1>{carts.name}</h1>
+                    <p>${carts.price}</p>
+                </div>
+               </div>
+                <div>
+                    <button onClick={()=>handelCartRemove(carts)} className='text-red-500 font-bold cursor-pointer'>Remove</button>
+                </div>
+            </div>
         </div>
+        })
+        }
+
+       
+        </div>
+
     );
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { BsCart2 } from 'react-icons/bs';
 
 
-const Navber = () => {
+const Navber = ({count}) => {
     return (
         <div className=' bg-base-100 shadow-sm'>
     <div className="flex justify-between p-2  w-300 mx-auto">
@@ -23,7 +23,7 @@ const Navber = () => {
   <div className="navbar-end flex gap-6">
       <div className="indicator">
         <BsCart2 />
-        <span className="badge badge-xs bg-red-400 indicator-item text-[6px] text-white p-1">0</span>
+        <span className={`badge badge-xs bg-red-400 indicator-item text-[6px] text-white p-1 ${count===0?'hidden':''} `}>{count}</span>
       </div>
       <div className='flex gap-5'>
         <button className='btn'>login</button>

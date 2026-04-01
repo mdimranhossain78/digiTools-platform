@@ -1,0 +1,16 @@
+import React from 'react';
+import ProductCard from '../ui/ProductCard';
+
+const Product = ({allData, addCart, setAddCart}) => {
+    // console.log(allData)
+    return (
+        <div className='grid grid-cols-3 gap-4'>
+          {
+            allData.map(products =><ProductCard  setAddCart={setAddCart} addCart={addCart} key={products.id} product ={products}></ProductCard> )
+          }
+          
+        </div>
+    );
+};
+
+export default Product;

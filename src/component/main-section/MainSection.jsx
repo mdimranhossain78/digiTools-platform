@@ -10,7 +10,7 @@ const MainSection = ({dataPromise, setCount}) => {
    const allData =use(dataPromise)
     const [tab, setTab]= useState('product')
     const [addCart, setAddCart] =useState([])
-    const [price, setPrice] = useState(0)
+    
     
     useEffect(()=>{
           setCount(addCart.length)
@@ -37,10 +37,10 @@ const MainSection = ({dataPromise, setCount}) => {
   
 </div>
             
-           {tab === "product"? <Product allData={allData} addCart = {addCart} setAddCart={setAddCart} price ={price} setPrice={setPrice}></Product> 
+           {tab === "product"? <Product allData={allData} addCart = {addCart} setAddCart={setAddCart}></Product> 
            
            :
-            <Cart addCart={addCart} setAddCart={setAddCart}  price ={price} setPrice={setPrice} ></Cart>} 
+            <Cart addCart={addCart} setAddCart={setAddCart}></Cart>} 
  
          {tab === "product"&&<Stapes></Stapes>}
         {tab === "product"&&<PricingCard></PricingCard>}

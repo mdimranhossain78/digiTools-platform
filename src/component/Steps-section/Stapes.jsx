@@ -4,7 +4,7 @@ const Stapes = () => {
     return (
         <div className='max-w-300 mx-auto my-50'>
            <div className='text-center mb-6'>
-             <h1 className='text-3xl font-extrabold'>Get Started in 3 Steps</h1>
+             <h1 className='text-3xl font-extrabold mb-4'>Get Started in 3 Steps</h1>
             <p>Start using premium digital tools in minutes, not hours.</p>
            </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>

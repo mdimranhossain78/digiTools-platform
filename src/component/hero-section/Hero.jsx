@@ -24,7 +24,7 @@ const Hero = () => {
                 
 
             <div className='logo'>
-                <img src="/public/image/banner.png" alt="" />
+                <img src="/image/banner.png" alt="" />
             </div>
         </div>
     );

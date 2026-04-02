@@ -5,7 +5,7 @@ const AvailableCart = ({addCart, setAddCart}) => {
     // console.log(addCart)
    
     const handelCartRemove =(carts)=>{
-        console.log(carts)
+        // console.log(carts)
 
         //   console.log(price)
 

@@ -6,7 +6,7 @@ const Footer = () => {
             <div>
                  <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-300 mx-auto'>
                 <div className='text-white col-span-2 space-y-4'>
-                    <img src="/public/image/rooterImag.png" alt="" />
+                    <img src="/image/rooterImag.png" alt="" />
                     <p>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                 </div>
                 <ul className='text-white space-y-4'>
@@ -34,9 +34,9 @@ const Footer = () => {
                 <div className=''>
                     <p className='font-medium text-[20px] text-white mb-4'>Social Links</p>
                     <div className='flex gap-4'>
-                        <img src="/public/image/Instagram.png" alt="" />
-                        <img src="/public/image/Twitter.png" alt="" />
-                        <img src="/public/image/Facebook.png" alt="" />
+                        <img src="/image/Instagram.png" alt="" />
+                        <img src="/image/Twitter.png" alt="" />
+                        <img src="/image/Facebook.png" alt="" />
                     </div>
                 </div>
                

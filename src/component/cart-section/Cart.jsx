@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 const Cart = ({addCart, setAddCart}) => {
     // console.log(addCart)
     const totalPrice = addCart.reduce((sum, item)=> sum + item.price, 0)
-    console.log(totalPrice)
+   
     const hendelClear = ()=>{
         setAddCart([])
         

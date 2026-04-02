@@ -18,7 +18,7 @@ const Stapes = () => {
             </div>
             <div className='flex justify-center'>
                 <div className='h-[99px] w-25 bg-[#9614fa33] rounded-full p-5 '>
-                  <div><img className='' src="/public/image/user.png" alt="" /> </div> 
+                  <div><img className='' src="/image/user.png" alt="" /> </div> 
                 </div>
                
             </div>
@@ -37,7 +37,7 @@ const Stapes = () => {
             </div>
             <div className='flex justify-center'>
                 <div className='h-[99px] w-25 bg-[#9614fa33] rounded-full p-5 '>
-                  <div><img className='' src="/public/image/package.png" alt="" /> </div> 
+                  <div><img className='' src="/image/package.png" alt="" /> </div> 
                 </div>
                
             </div>
@@ -56,7 +56,7 @@ const Stapes = () => {
             </div>
             <div className='flex justify-center'>
                 <div className='h-[99px] w-25 bg-[#9614fa33] rounded-full p-5 '>
-                  <div><img className='' src="/public/image/rocket.png" alt="" /> </div> 
+                  <div><img className='' src="/image/rocket.png" alt="" /> </div> 
                 </div>
                
             </div>

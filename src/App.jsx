@@ -8,7 +8,7 @@ import MainSection from './component/main-section/MainSection'
 import { useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 
-const dataPromise= fetch('/public/data.json')
+const dataPromise= fetch('/data.json')
 .then(res=> res.json())
 function App() {
 //  console.log(allCardsData)

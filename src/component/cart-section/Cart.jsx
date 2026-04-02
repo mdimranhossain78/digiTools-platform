@@ -1,24 +1,33 @@
 import React from 'react';
 import AvailableCart from './AvailableCart';
 import EmtyCart from '../emtyCart/EmtyCart';
+import { toast } from 'react-toastify';
 
-const Cart = ({addCart, setAddCart, price, setPrice}) => {
+const Cart = ({addCart, setAddCart}) => {
     // console.log(addCart)
+    const totalPrice = addCart.reduce((sum, item)=> sum + item.price, 0)
+    console.log(totalPrice)
     const hendelClear = ()=>{
         setAddCart([])
-        setPrice(0)
+        
+        if(addCart.length === 0){
+             toast.error('cart is empty')
+        }else{
+             toast.success('Proceeding to checkout...')
+        }
+      
     }
     return (
         <div>
             <h1 className='mb-4 font-bold text-2xl'>Your Cart</h1>
 
-           {addCart.length !=0 ? <AvailableCart addCart={addCart} setAddCart={setAddCart}  price ={price} setPrice={setPrice}></AvailableCart> : <EmtyCart></EmtyCart>
+           {addCart.length !=0 ? <AvailableCart addCart={addCart} setAddCart={setAddCart}></AvailableCart> : <EmtyCart></EmtyCart>
             }
 
           
             <div className='flex justify-between'>
                 <p>Total:</p>
-                <p className='font-bold text-2xl'>${price}</p>
+                <p className='font-bold text-2xl'>${totalPrice}</p>
             </div>
             
             

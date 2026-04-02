@@ -7,7 +7,7 @@ const Navber = ({count}) => {
     return (
       
        
- <div className='bg-base-100 shadow-sm'>
+ <div className='bg-base-100 shadow-sm p-2 sticky top-0 z-10'>
         
 
           <div className="flex justify-between max-w-300 mx-auto">
@@ -26,7 +26,7 @@ const Navber = ({count}) => {
               <li><a>FAQ</a></li>
             </ul>
           </div>
-          <img className='max-w-25 md:max-w-40 lg:max-w-50' src="/image/DigiTools.png" alt="" />
+          <img className='max-w-22 md:max-w-40 lg:max-w-50' src="/image/DigiTools.png" alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ const Navber = ({count}) => {
         <div className=" gap-2 md:gap-4 navbar-end flex">
           <div className="indicator">
                         <BsCart2 />
-                        <span className={`badge badge-xs bg-red-400 indicator-item text-[6px] text-white p-1 ${count===0?'hidden':''} `}>{count}</span>
+                        <span className={`badge badge-xs bg-red-500 indicator-item text-white text-[10px] p-1 ${count===0?'hidden':''} `}>{count}</span>
                       </div>
             <button className='btn rounded-full'>login</button>
           <a className="btn btn-primary rounded-full">Get Started</a>

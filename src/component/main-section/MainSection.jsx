@@ -3,6 +3,7 @@ import Product from '../product/Product';
 import Cart from '../cart-section/Cart';
 import Stapes from '../Steps-section/Stapes';
 import PricingCard from '../pricing-section/PricingCard';
+import Footer from '../footer-section/Footer';
 
 const MainSection = ({dataPromise, setCount}) => {
 
@@ -20,8 +21,8 @@ const MainSection = ({dataPromise, setCount}) => {
 
     // console.log(allData)
     return (
-
-        <div className='max-w-300 mx-auto my-30'>
+        <div>
+                 <div className='max-w-300 mx-auto my-30'>
 
             <div className='text-center mb-6'>
                 <h1 className='font-extrabold text-[48px]'>Premium Digital Tools</h1>
@@ -43,9 +44,15 @@ const MainSection = ({dataPromise, setCount}) => {
  
          {tab === "product"&&<Stapes></Stapes>}
         {tab === "product"&&<PricingCard></PricingCard>}
+        
+
          
 
         </div>
+
+        {tab === "product"&&<Footer></Footer>}
+        </div>
+       
     );
 };
 

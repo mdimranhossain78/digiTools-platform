@@ -6,6 +6,7 @@ import Hero from './component/hero-section/Hero'
 import Analysis from './component/analysis/Analysis'
 import MainSection from './component/main-section/MainSection'
 import { useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 
 const dataPromise= fetch('/public/data.json')
 .then(res=> res.json())
@@ -20,6 +21,7 @@ const [count, setCount]=useState(0)
       <Analysis></Analysis>
       <MainSection dataPromise = {dataPromise} setCount={setCount}></MainSection>
       
+       <ToastContainer />
 
     </>
   )

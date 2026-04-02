@@ -1,6 +1,7 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
-const ProductCard = ({product, setAddCart, addCart, price, setPrice}) => {
+const ProductCard = ({product, setAddCart, addCart}) => {
     // console.log(product)
     let tags = null;
     if(product.tag==="New"){
@@ -14,12 +15,17 @@ const ProductCard = ({product, setAddCart, addCart, price, setPrice}) => {
     }
 
     const handleCardBtn = ()=>{
-       setAddCart([...addCart, product])
-       alert("Add to cart")
-       const total = price + product.price
-       
-       setPrice(Number(total.toFixed(2)))
-        // console.log(product.price)
+        
+        const exist = addCart.find(item => item.id === product.id);
+        if(!exist){
+            setAddCart([...addCart, product])   
+        }
+         if(!exist){
+             toast.success(`Add to cart`)
+         }else{
+            
+             toast.error('alrady added')
+         }
     }
     
     return (
@@ -28,15 +34,16 @@ const ProductCard = ({product, setAddCart, addCart, price, setPrice}) => {
                 <div className="card-body">
                     <div className='flex justify-between'>
 
-                        <img src="/public/image/operation.png" alt="" />
+                        <img className='w-[32px]' src={product.icon} alt="" />
                        <div>
                          {tags}
                        </div>
                     </div>
                    
                     <h2 className="text-3xl font-bold">{product.name}</h2>
-                   
-            
+
+                    <p>{product.description}</p>
+
                      <p className="text-xl">${product.price}/{product.period}</p>
 
                     <ul className="mt-6 flex flex-col gap-2 text-xs">

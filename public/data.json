@@ -12,7 +12,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "📄"
+    "icon": "https://i.ibb.co.com/cXQr35rm/portfolio.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "SEO optimization",
       "Multiple tones"
     ],
-    "icon": "✍️"
+    "icon": "https://i.ibb.co.com/5XK8hKD6/writing-2327400-1.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Analytics dashboard",
       "Multi-platform support"
     ],
-    "icon": "📅"
+    "icon": "https://i.ibb.co.com/Dg9Xkvgp/social-media.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Custom fonts",
       "High-resolution export"
     ],
-    "icon": "🎨"
+    "icon": "https://i.ibb.co.com/27DyPM2Z/design-tool.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Free hosting",
       "Mobile responsive"
     ],
-    "icon": "🌐"
+    "icon": "https://i.ibb.co.com/tpYvQFWs/operation.png"
   },
   {
     "id": 6,
@@ -87,36 +87,8 @@
       "Auto-fill login",
       "Cross-device sync"
     ],
-    "icon": "🔐"
-  },
-  {
-    "id": 7,
-    "name": "Video Editor Lite",
-    "description": "Edit videos quickly with simple tools.",
-    "price": 24.99,
-    "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
-    "features": [
-      "Drag & drop timeline",
-      "Transitions & effects",
-      "Export in HD"
-    ],
-    "icon": "🎬"
-  },
-  {
-    "id": 8,
-    "name": "Cloud Storage Pro",
-    "description": "Store and access your files securely in the cloud.",
-    "price": 5.99,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best-seller",
-    "features": [
-      "1TB storage",
-      "File sharing",
-      "Auto backup"
-    ],
-    "icon": "☁️"
+    "icon": "https://i.ibb.co.com/RkkNbMBP/key.png"
   }
+  
+  
 ]

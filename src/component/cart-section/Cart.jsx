@@ -11,7 +11,7 @@ const Cart = ({addCart, setAddCart}) => {
         setAddCart([])
         
         if(addCart.length === 0){
-             toast.error('cart is empty')
+             toast.error('Cart is empty')
         }else{
              toast.success('Proceeding to checkout...')
         }

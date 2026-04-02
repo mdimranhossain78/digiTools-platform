@@ -9,7 +9,7 @@ const AvailableCart = ({addCart, setAddCart}) => {
 
         //   console.log(price)
 
-        toast(`Remove the  ${carts.name} `)
+        toast(`Remov to cart`)
 
         const fileteredCarts = addCart.filter((filterCart)=> filterCart.name  != carts.name)
         setAddCart(fileteredCarts)
